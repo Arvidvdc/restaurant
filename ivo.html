@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Document</title>
+</head>
+<body>
+   <form id='menu'></form>
+   <script>
+       var menu = {
+           "Cheeseburger": 5.50,
+           "Tosti": 4.50,
+           "Sandwich cheese": 6.50,
+           "Cola": 3.50,
+           "Coffee": 4.50,
+           "Cappuccino": 4.60,
+           "Tea": 3.50,
+           "Beer": 6.50
+       };
+       for (var key in menu) {
+           var div = document.getElementById('menu');
+           div.innerHTML += key + menu[key] + '<input type="checkbox" value=' + key + '><br>';
+       }
+   </script>
+</body>
+</html>

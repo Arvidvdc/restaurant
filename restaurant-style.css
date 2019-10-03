@@ -45,3 +45,18 @@ tr.head2 {
 td.tabbed {
     text-indent: 15px;
 }
+
+.btn {
+    background-color: green;
+    border: none;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 3px 3px greenyellow;
+  }
+  
+  .btn:hover {
+    background-color: greenyellow;
+  }

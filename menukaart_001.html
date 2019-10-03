@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <Title>CodeGorilla - Restaurant oefening</Title>
+        <link rel="icon" href="http://85.150.72.244:8880/SARgE.ico" type="image/x-icon">
+        <link rel="stylesheet" href="restaurant-style.css">
+    </head>
+    <script>
+        var pizzaMargeritha="€ 9,50", pizzaQuattroFormaggio="€ 12,50", pizzaAlTonno="€ 15,00";
+        var drankCola="€ 2,50", drankBier="€ 1,50", drankKoffie="€ 2,50", drankWater="€ 1,00";
+        var dessertIjs="€ 2,00", dessertIrishCoffee="€ 3,00"
+    </script>
+    <!-- Opdracht
+        <script>console.log('Glaswater')</script>
+    -->
+    <body>
+        <h3>Welkom bij restaurant <div class="SGTTitel">"Arvid's Keuken"</h3>
+        <p class="SGTIntroTekst">Dit speciale restaurant is ontwikkeld voor de training CodeGorilla.<BR>
+        Neem rustig uw tijd met het bekijken van onze menukaart en bestel wat u lekker vindt.</p>
+
+            <table class="lijst">
+                <tr class="SGTTitel">
+                    <td>Pizza's</td>
+                    <td></td>
+                </tr>
+                <tr class="head2">
+                    <td>Pizza</td>
+                    <td>Prijs</td>
+                </tr>
+                <tr>
+                    <td class="tabbed">Pizza margeritha</td>
+                    <td id="pizzaMargeritha"><script>document.getElementById("pizzaMargeritha").innerHTML = pizzaMargeritha;</Script></td>
+                </tr>
+                <tr>
+                    <td class="tabbed">Pizza quattro formaggio</td>
+                    <td id="pizzaQuattroFormaggio">HELLO DUDE</td>
+                </tr>
+                <tr>
+                    <td class="tabbed">Pizza al tonno</td>
+                    <td id="pizzaAlTonno"><script> document.getElementById("pizzaAlTonno").innerHTML = pizzaAlTonno;</Script></td>
+                </tr>
+                <tr class="SGTTitel">
+                        <td>Dranken</td>
+                        <td></td>
+                </tr>
+                <tr class="head2">
+                        <td>Drank</td>
+                        <td>Prijs</td>
+                </tr>
+                <tr>
+                    <td class="tabbed">Koffie per kop</td>
+                    <td id="drankKoffie"><script> document.getElementById("drankKoffie").innerHTML = drankKoffie;</Script></td>
+                </tr>
+                <tr>
+                    <td class="tabbed">Water per glas</td>
+                    <td id="drankWater"><script> document.getElementById("drankWater").innerHTML = drankWater;</Script></td>
+                </tr>
+                <tr>
+                    <td class="tabbed">Cola fles 0,5 l</td>
+                    <td><span id="drankCola">bep</span></td>
+                </tr>
+                <tr>
+                    <td class="tabbed">Bier glas 0,5 l</td>
+                    <td><script>document.write(drankBier)</Script></td>
+                </tr>
+                <tr class="SGTTitel">
+                        <td>Desserts</td>
+                        <td></td>
+                </tr>
+                <tr class="head2">
+                        <td>Gerecht</td>
+                        <td>Prijs</td>
+                </tr>
+                <tr>
+                    <td class="tabbed">IJsje</td>
+                    <td><script>document.write(dessertIjs)</script></td>
+                </tr>
+                <tr>
+                    <td class="tabbed">Irish Coffee</td>
+                    <td><script>document.write(dessertIrishCoffee)</script></td>
+                </tr>
+            </table>
+            <script>
+                document.getElementById("drankCola").innerHTML = drankCola;
+            </Script>
+    </body>
+</html>
+
+<!-- structuur 
+        <tr class="SGTTitel">
+                <td></td>
+                <td></td>
+        </tr>
+        <tr class="head2">
+                <td></td>
+                <td>Prijs</td>
+        </tr>
+        <tr>
+            <td class="tabbed"></td>
+            <td><script>document.write(dessertIrishCoffee)</script></td>
+        </tr>
+-->
